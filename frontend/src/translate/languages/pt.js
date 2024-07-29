@@ -110,6 +110,7 @@ const messages = {
         },
         table: {
           name: "Nome",
+		  number: "Número",
           status: "Status",
           lastUpdate: "Última atualização",
           default: "Padrão",
@@ -171,8 +172,15 @@ const messages = {
           deleteAllMessage: "Tem certeza que deseja deletar todos os contatos? Todos os tickets relacionados serão perdidos.",
           importMessage: "Deseja importar todos os contatos do telefone?",
         },
+		confirmationModal:{
+			importTitlte: "Importar contatos",
+			importMessage: "Esta ação irá importar os contatos salvos na agenda do WhatsApp. Alguns modelos podem não permitir essa funcionalidade ou de acordo com sua configuração de privacidade! Verifique em até 1 hora o resultado.",
+			deleteTitle:"Deletar",
+			deleteMessage:"Tem certeza que deseja deletar este contato? Todos os atendimentos relacionados serão perdidos.",
+		},
         buttons: {
           import: "Importar Contatos",
+		  importSheet: "Import. Excel",
           add: "Adicionar Contato",
           export: "Exportar Contatos",
           delete: "Excluir Todos Contatos"
@@ -292,6 +300,9 @@ const messages = {
           add: "Adicionar fila",
           edit: "Editar fila",
         },
+		confirmationModal: {
+		  "deleteTitle": "Excluir",
+		},
         form: {
           name: "Nome",
           color: "Cor",
@@ -307,6 +318,7 @@ const messages = {
           okAdd: "Adicionar",
           okEdit: "Salvar",
           cancel: "Cancelar",
+		  attach: "Anexar Arquivo",
         },
       },
       userModal: {
@@ -553,13 +565,14 @@ const messages = {
           add: "Adicionar",
           edit: "Editar",
           visao: "Permitir visão",
+		  geral: 'Global',
         },
         table: {
           shortcode: "Atalho",
           message: "Mensagem",
           actions: "Ações",
           mediaName: "Nome do Arquivo",
-          status: "Status",
+          status: 'Global',
         },
       },
       messageVariablesPicker: {
@@ -926,6 +939,7 @@ const messages = {
       messageOptionsMenu: {
         delete: "Deletar",
         reply: "Responder",
+		edit: 'Editar Mensagem',
         confirmationModal: {
           title: "Apagar mensagem?",
           message: "Esta ação não pode ser revertida.",
